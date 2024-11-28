@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-    <h1 style="color: black;">Welcome to Home Page</h1>
+    <h1 style="color: black;">Welcome to Home Page Boss Kub</h1>
   </div>
 </template>
 
