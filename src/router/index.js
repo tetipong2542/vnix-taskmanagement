@@ -7,6 +7,15 @@ const routes = [
     name: 'home',
     component: () => import('@/views/HomePage.vue'),
     // meta: { requiresAuth: true }
+<<<<<<< HEAD
+=======
+  },
+  {
+    path: '/task',
+    name: 'task',
+    component: () => import('@/views/TaskPage.vue'),
+    // meta: { requiresAuth: true }
+>>>>>>> 2d707ac346db1fef57b99d6f67eee542341105a3
   },
   {
     path: '/home',
