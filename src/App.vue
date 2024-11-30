@@ -35,7 +35,8 @@ const showSidebar = computed(() => {
   </div>
       <nav>
         <ul>
-          <li><a href="#">Dashboard</a></li>
+          <li><a href="/home">Home</a></li>
+          <li><a href="#">Task</a></li>
           <li><a href="#">Profile</a></li>
           <li><a href="#">Settings</a></li>
           <li><BaseButton @click="handleLogout">Logout</BaseButton></li>
