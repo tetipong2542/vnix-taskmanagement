@@ -1,8 +1,6 @@
 <template>
   <div class="container">
     <h1>การจัดการงานที่มอบหมาย</h1>
-
-    <!-- หมวดหมู่งาน -->
     <div class="task-category" id="upcoming">
       <h2>งานที่กำลังจะถึง</h2>
       <ul class="task-list">
@@ -41,7 +39,6 @@
       </ul>
     </div>
 
-    <!-- เพิ่มงาน -->
     <div class="add-task">
       <input type="text" v-model="newTaskName" placeholder="เพิ่มชื่องาน">
       <input type="file" ref="fileInput" @change="handleFileChange">
@@ -80,18 +77,15 @@ const addTask = () => {
 
   upcomingTasks.value.push(newTask)
   
-  // Clear inputs
   newTaskName.value = ''
   fileInput.value.value = ''
   selectedFile.value = null
 }
 
 const completeTask = (task) => {
-  // Remove from other lists
   upcomingTasks.value = upcomingTasks.value.filter(t => t.id !== task.id)
   overdueTasks.value = overdueTasks.value.filter(t => t.id !== task.id)
   
-  // Add to completed
   task.completed = true
   completedTasks.value.push(task)
 }
