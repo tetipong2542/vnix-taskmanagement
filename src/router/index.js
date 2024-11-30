@@ -15,6 +15,11 @@ const routes = [
     // meta: { requiresAuth: true }
   },
   {
+    path: '/tasks',
+    name: 'Tasks',
+    component: () => import('@/views/TaskPage.vue')
+  },
+  {
     path: '/home',
     redirect: '/'
   },
